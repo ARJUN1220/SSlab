@@ -10,7 +10,7 @@ int main() {
         perror("Error opening file");
         return 1;
     }
-    const char data1[] = "MT2023050-";
+    const char data1[] = "MT2023153-";
     int bytesWritten = write(fd, data1, sizeof(data1) - 1);
     if (bytesWritten == -1) {
         perror("Error writing data");
@@ -24,7 +24,7 @@ int main() {
         close(fd);
         return 1;
     }
-    const char data2[] = " VrajJNaik";
+    const char data2[] = " Arjun";
     bytesWritten = write(fd, data2, sizeof(data2) - 1);
     if (bytesWritten == -1) {
         perror("Error writing data");
